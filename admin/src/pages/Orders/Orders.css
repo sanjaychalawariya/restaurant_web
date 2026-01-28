@@ -1,0 +1,46 @@
+.orders-page {
+  padding: 20px;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.orders-table {
+  display: grid;
+  gap: 8px;
+}
+
+.orders-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1fr 1fr 1.6fr 1.6fr;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid #eee;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.orders-row--head {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.status {
+  text-transform: capitalize;
+}
+.status.delivered { color: #1e7e34; }
+.status.pending { color: #856404; }
+.status.cancelled { color: #721c24; }
+.status.preparing { color: #0c5460; }
+.status.out_for_delivery { color: #004085; }
+
+.orders-actions { display: flex; gap: 8px; }
+.btn { padding: 6px 12px; border: 1px solid #ccc; background: #fff; cursor: pointer; border-radius: 4px; }
+.btn:hover { background: #f1f1f1; }
+
+

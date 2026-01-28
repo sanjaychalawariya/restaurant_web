@@ -1,0 +1,142 @@
+/* Container for the add form */
+.add {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px 24px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Set form flex direction vertically */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Each input group container */
+.add-img-upload,
+.add-product-name,
+.add-product-description,
+.add-category,
+.add-price {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label text styling */
+.add p {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+/* Image upload area */
+.add-img-upload label {
+  cursor: pointer;
+  border: 2px dashed #bbb;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+  transition: border-color 0.3s;
+}
+
+.add-img-upload label:hover {
+  border-color: #068dff;
+}
+
+.add-img-upload img {
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+/* Text input & textarea */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #068dff;
+}
+
+/* Category and Price container - horizontal */
+.add-category-price {
+  display: flex;
+  gap: 16px;      /* space between the two boxes */
+  align-items: flex-start;   /* align top edges */
+  flex-wrap: nowrap;         /* prevent wrapping */
+}
+
+.add-category,
+.add-price {
+  flex: 1;              /* equally share available width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Submit button */
+.add-btn {
+  margin-top: 10px;
+  padding: 12px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #068dff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(6,141,255,0.4);
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #005bb5;
+}
+
+.message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+
+/* Responsive adjustment */
+@media (max-width: 480px) {
+  .add {
+    padding: 16px;
+  }
+  .add-category-price {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
