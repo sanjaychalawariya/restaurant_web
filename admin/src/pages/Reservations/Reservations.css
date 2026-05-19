@@ -1,0 +1,32 @@
+.reservation-list {
+    padding: 20px;
+}
+
+.reservation-list .list-table {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reservation-list .list-table-format {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 2fr 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 14px;
+}
+
+.reservation-list .list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.reservation-list select {
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: max-content;
+    padding: 10px;
+    outline: none;
+}

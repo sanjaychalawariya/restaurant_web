@@ -10,16 +10,18 @@ import PlaceOrder from './pages/PlaceOrder/PlaceOrder';
 import OrderConfirmation from './pages/OrderConfirmation/OrderConfirmation';
 import MyOrders from './pages/MyOrders/MyOrders';
 import Profile from './pages/Profile/Profile';
+import Reservation from './pages/Reservation/Reservation';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Add these routes
 
 function App() {
   return (
     <>
-  
+      <ToastContainer />
       <div className='app'>
         <Navbar />
-      
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,6 +32,7 @@ function App() {
         <Route path="/order-confirmation" element={<OrderConfirmation />} />
         <Route path="/my-orders" element={<MyOrders />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/reserve" element={<Reservation />} />
         </Routes>
         
       </div>

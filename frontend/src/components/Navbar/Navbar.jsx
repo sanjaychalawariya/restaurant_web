@@ -43,7 +43,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <a 
-                        href='#explore-menu' 
+                        href='/#explore-menu' 
                         className={menu === "menu" ? "active" : ""} 
                         onClick={() => setMenu("menu")}
                     >
@@ -51,8 +51,17 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
+                    <Link 
+                        to='/reserve' 
+                        className={menu === "reserve" ? "active" : ""} 
+                        onClick={() => setMenu("reserve")}
+                    >
+                        reserve table
+                    </Link>
+                </li>
+                <li>
                     <a 
-                        href='#footer' 
+                        href='/#footer' 
                         className={menu === "contact us" ? "active" : ""} 
                         onClick={() => setMenu("contact us")}
                     >
